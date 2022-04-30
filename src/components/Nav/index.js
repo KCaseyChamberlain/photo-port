@@ -25,11 +25,8 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li
-            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && `navActive`
-              }`}
-            key={category.name}
-          >            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
               About me
             </a>
           </li>
@@ -38,7 +35,7 @@ function Nav(props) {
           </li>
           {categories.map((category) => (
             <li
-              className={`mx-1 ${currentCategory.name === category.name
+              className={`mx-1 ${currentCategory.name === category.name && !contactSelected && `navActive`
                 }`}
               key={category.name}
             >
