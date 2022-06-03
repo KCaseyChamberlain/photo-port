@@ -1,7 +1,7 @@
 # Photo Port
 
 ### Description
-This front-end React.js application is a photogrophy portfolio where components are conditionally rendered to create a great UI.
+This front-end React.js application is a photography portfolio where components are conditionally rendered to create a great UI.
 
 ### License
 ![Github licence](https://img.shields.io/badge/license-MIT-blue.svg)
